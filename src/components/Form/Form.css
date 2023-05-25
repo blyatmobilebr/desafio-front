@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 392px;
+    height: 851px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+}
+
+.form-title {
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 123.5%;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.label {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: left;
+}
+
+.input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 0px;
+    gap: 10px;
+    width: 220px;
+    height: 48px;
+}
+
+.error {
+    color: red;
+}
+
+.clear-button {
+    background: rgb(240, 55, 55);
+}
+
+.form-button {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #FFFFFF;
+    width: 126px;
+    height: 60px;
+
+}
+
+.send-button {
+    background: #007DFF;
+}
+
+.paragraph {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166%;
+
+    /* identical to box height, or 20px */
+    letter-spacing: 0.4px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166%;
+
+    /* identical to box height, or 20px */
+    letter-spacing: 0.4px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #007DFF;
+}
