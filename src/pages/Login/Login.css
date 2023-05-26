@@ -60,11 +60,11 @@
 }
 
 .error {
-    color: red;
-}
-
-.clear-button {
-    background: rgb(240, 55, 55);
+    background-color: rgb(247, 59, 59);
+    color: #611A15;
+    width: 220px;
+    height: 48px;
+    font-size: 14px;
 }
 
 .form-button {
@@ -81,10 +81,6 @@
     width: 126px;
     height: 60px;
 
-}
-
-.send-button {
-    background: #007DFF;
 }
 
 .paragraph {
