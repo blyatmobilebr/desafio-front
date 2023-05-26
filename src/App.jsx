@@ -1,10 +1,22 @@
 import './App.css'
-import Form from './components/Form/Form'
+import Login from './pages/Login/Login';
+import Produtos from './pages/Produtos/Produtos';
+import SignUp from './pages/SignUp/SignUp';
+import {Routes, Route} from "react-router-dom"
 
 
 function App() {
   return (
-    <Form />
+    <Routes>
+      <Route path="/" element={<Login />}>
+        <Route path="/sign-in" element={<Login />} />
+      </Route>
+
+      <Route path="/sign-up" element={<SignUp />} />
+      <Route path="/produtos" element={<Produtos />} />
+
+
+    </Routes>
   )
 }
 
