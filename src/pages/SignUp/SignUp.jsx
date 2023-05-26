@@ -12,7 +12,6 @@ function SignUp() {
     });
 
     const [error, setError] = useState("");
-    const [success, setSuccess] = useState("");
     const navigate = useNavigate();
 
 
@@ -32,14 +31,11 @@ function SignUp() {
     
         if (!form.nome || !form.email || !form.nome_loja || !form.senha || !form.senhaConfirmacao) {
             setError("TODOS os campos são obrigatórios!");
-            setSuccess("");
             
         } else if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))) {
             setError("E-mail está num formato inválido!");
-            setSuccess("");
         } else if (form.senhaConfirmacao !== form.senha) {
             setError("As senhas não coincidem!");
-            setSuccess("");
         } else {
             setError("");
             navigate("/sign-in")
