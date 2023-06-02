@@ -9,8 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .form {
@@ -31,7 +29,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 123.5%;
     letter-spacing: 0.25px;
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: 20px;
@@ -95,7 +92,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 166%;
     letter-spacing: 0.4px;
     color: rgba(0, 0, 0, 0.87);
 }

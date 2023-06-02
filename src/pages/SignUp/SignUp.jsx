@@ -38,7 +38,7 @@ function SignUp() {
             setError("As senhas não coincidem!");
         } else {
             setError("");
-            navigate("/sign-in")
+            navigate("/sign-in");
         }
 
         localStorage.setItem("nome", JSON.stringify(form.nome));
@@ -91,7 +91,7 @@ function SignUp() {
                     value={form.senha}
                     name="senha"
                 />
-
+                
                 <label className="label">Repita a senha</label>
                 <input
                     className="input"

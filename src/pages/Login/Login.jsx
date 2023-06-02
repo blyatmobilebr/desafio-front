@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Login.css"
 import { Link, useNavigate } from "react-router-dom";
 
-
 function Login() {
   const navigate = useNavigate();
 
@@ -85,7 +84,7 @@ function Login() {
         </button>
 
         <p className="paragraph">
-          Primeira vez aqui? <Link to="/sign-up" className="link">CRIE UMA CONTA</Link>
+          Primeira vez aqui? <Link to="/usuarios" className="link">CRIE UMA CONTA</Link>
         </p>
       </form>
     </div>
