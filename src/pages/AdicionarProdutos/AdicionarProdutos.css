@@ -1,29 +1,8 @@
-.inline-input {
-    display: flex;
-}
-
-.inline-input .input-wrapper {
-    margin-right: 20px;
-    flex: 1;
-}
-
-.inline-input label {
-    margin-bottom: 20px;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-    color: #0000008A;
-}  
-
 .cancel {
-    margin-left: 0;
-}
-
-.cancel:hover {
-    cursor: pointer;
-}
-
-Button:hover {
-    cursor: pointer;
+    color: #007DFF;
+    background-color: #E5E5E5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
 }

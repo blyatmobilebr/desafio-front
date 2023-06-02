@@ -22,6 +22,8 @@ function App() {
       <Route path="/produtos/novo" element={<AdicionarProdutos />} />
       <Route path="/produtos/editar" element={<EditarProduto />} /> 
       <Route path="/perfil/editar" element={<EditarPerfil />} />
+      <Route path="/perfil" element={<Perfil />} />
+
 
       <Route path="*" element={<ErrorPage />} />
     </Routes>

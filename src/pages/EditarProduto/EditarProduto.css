@@ -1,19 +1,24 @@
-.form-wrapper {
+.container {
     display: flex;
 }
 
-.form-content {
-    flex: 1;
-}
-
 .img {
-    display: flex; 
-    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .img img {
-    width: 308px;
     height: 402px;
+    width: 308px;
+    border-radius: 16px;
+    margin-left: 166px;
+}
+
+.estoque-preco {
+    display: flex;
+}
+
+.estoque-preco input {
+    width: 184px;
 }

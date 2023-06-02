@@ -1,8 +1,6 @@
 function ErrorPage() {
   return (
-    <div>
-        <h1>Errooooou</h1>
-    </div>
+    <div>Erroooou</div>
   )
 }
 

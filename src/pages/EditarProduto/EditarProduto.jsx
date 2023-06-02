@@ -4,9 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../../components/Navbar/Navbar";
 import "./EditarProduto.css";
-import Plant from "../../assets/Rectangle-4.png";
+import Plant from "../../assets/Rectangle-4.png"
 
-function AdicionarProdutos() {
+function EditarProduto() {
   let { nome_loja } = localStorage;
   nome_loja = JSON.parse(nome_loja);
 
@@ -90,84 +90,82 @@ function AdicionarProdutos() {
       <Navbar />
 
       <div className="form-wrapper">
-        <div className="form-content">
-          <h1>{nome_loja}</h1>
-          <h2>Editar produto</h2>
-          <form onSubmit={handleSubmit}>
+        <h1>{nome_loja}</h1>
+        <h2>Editar Produto</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="label-container">
+            <label>Nome do produto</label>
+          </div>
+          <input
+            type="text"
+            name="nome"
+            value={form.nome}
+            onChange={handleInputChange}
+          />
+
+          <div className="estoque-preco">
             <div className="label-container">
-              <label>Nome do produto</label>
+              <label>Preço</label>
             </div>
-            <input
-              type="text"
-              name="nome"
-              value={form.nome}
-              onChange={handleInputChange}
-            />
-
-            <div className="inline-input">
-              <div className="input-wrapper">
-                <label htmlFor="preco">Preço</label>
-                <input
-                  type="text"
-                  name="preco"
-                  id="preco"
-                  placeholder="R$"
-                />
-              </div>
-
-              <div className="input-wrapper">
-                <label htmlFor="estoque">Estoque</label>
-                <input
-                  type="text"
-                  name="estoque"
-                  id="estoque"
-                  placeholder="Un"
-                />
-              </div>
-            </div>
-
-            <div className="label-container">
-              <label>Descrição do produto</label>
-            </div>
-            <input
-              type="text"
-              name="descricao"
-              value={form.descricao}
-              onChange={handleInputChange}
-            />
-
-            <div className="label-container">
-              <label>Imagem</label>
-            </div>
-            <input
-              type="text"
-              name="imagem"
-              value={form.imagem}
-              onChange={handleInputChange}
-            />
-
-            <div className="cancel-add-wrapper">
-              <button className="cancel" onClick={handleCancel}>
-                <Link to="/perfil">Cancelar</Link>
-              </button>
-
-              <Button
-                text="Salvar Alterações"
-                type="button"
-                onClick={handleClick}
+            <div className="input-wrapper">
+              <input
+                type="text"
+                name="preco"
+                value={form.preco}
+                onChange={handleInputChange}
               />
-
-              {error && <span className="error">{error}</span>}
             </div>
-          </form>
-        </div>
 
-        <div className="img">
-          <img src={Plant} alt="" />
-        </div>
+            <div className="label-container">
+              <label>Estoque</label>
+            </div>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                name="estoque"
+                value={form.estoque}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+
+          <div className="label-container">
+            <label>Descrição do produto</label>
+          </div>
+          <input
+            type="text"
+            name="descricao"
+            value={form.descricao}
+            onChange={handleInputChange}
+          />
+
+          <div className="label-container">
+            <label>Imagem</label>
+          </div>
+          <input
+            type="text"
+            name="imagem"
+            value={form.imagem}
+            onChange={handleInputChange}
+          />
+
+          <div className="cancel-add-wrapper">
+            <button className="cancel" onClick={handleCancel}>
+              <Link to="/perfil">Cancelar</Link>
+            </button>
+
+            <Button text="Salvar Alterações" type="button" onClick={handleClick} />
+
+            {error && <span className="error">{error}</span>}
+          </div>
+        </form>
+      </div>
+
+      <div className="img">
+        <img src={Plant} alt=""/>
       </div>
     </div>
   );
 }
 
-export default AdicionarProdutos;
+export default EditarProduto;
