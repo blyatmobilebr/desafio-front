@@ -1,0 +1,46 @@
+.form-wrapper {
+    display: flex;
+    margin-left: 74px;
+    flex-direction: column;
+}
+
+.form-wrapper h1 {
+    margin-top: 78px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.form-wrapper h2 {
+    margin-top: 86px;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.25px;
+    margin-bottom: 97px;
+
+}
+
+input {
+    width: 392px;
+    height: 48px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin-bottom: 48px;
+}
+
+label {
+    color: #0000008A;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+Button {
+    margin-left: 0;
+}
