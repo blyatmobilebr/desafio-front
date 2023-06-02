@@ -1,0 +1,12 @@
+.add-button {
+    height: 36px;
+    width: 179px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #007DFF;
+    text-transform: uppercase;
+    margin-top: 35px;
+}
