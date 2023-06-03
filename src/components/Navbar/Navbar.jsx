@@ -1,20 +1,21 @@
-import Produtos from "../../assets/Frame-3.png";
-import Perfil from "../../assets/Frame 4.png";
-import Sair from "../../assets/Frame.png";
-import "./Navbar.css";
+import { Link } from 'react-router-dom';
+import Produtos from '../../assets/Frame-3.png';
+import Perfil from '../../assets/Frame 4.png';
+import Sair from '../../assets/Frame.png';
+import './Navbar.css';
 
 function Navbar() {
   return (
     <div className="navbar">
-      <a href="/produtos">
+      <Link to="/produtos">
         <img src={Produtos} alt="produtos-page" id="first-img" />
-      </a>
-      <a href="/perfil">
+      </Link>
+      <Link to="/perfil">
         <img src={Perfil} alt="perfil-page" />
-      </a>
-      <a href="/sign-in">
+      </Link>
+      <Link to="/sign-in">
         <img src={Sair} alt="sair-page" />
-      </a>
+      </Link>
     </div>
   );
 }
